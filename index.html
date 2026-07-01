@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gokulnath Raja | AI & Data Science Portfolio</title>
+    <meta name="description" content="Portfolio of Gokulnath Raja, a passionate B.Tech student in Artificial Intelligence and Data Science at CMS College of Engineering. Specialized in Python, Machine Learning, and UI/UX design.">
+    <!-- Google Fonts: Outfit and Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Glowing Orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <!-- Header Navigation -->
+    <header class="navbar" id="main-header">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo" id="logo-link">Gokulnath<span class="gradient-text">.AI</span></a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#github-showcase" class="nav-link">Code</a>
+                <a href="#timeline" class="nav-link">Timeline</a>
+                <a href="#certificates" class="nav-link">Credentials</a>
+                <a href="#insights" class="nav-link">Insights</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle light/dark theme" title="Toggle Light/Dark Theme">
+                    <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+                <button class="recruiter-toggle-btn" id="recruiter-toggle" aria-label="Toggle Recruiter Mode" title="Switch to Recruiter Quick Scan Mode">
+                    <span class="toggle-icon">⚡</span>
+                    <span class="toggle-text">Recruiter Mode</span>
+                </button>
+                <button class="btn-secondary nav-cv-btn" id="download-cv-btn" title="Print/Download Professional Resume">
+                    <span class="btn-icon">📥</span> Resume
+                </button>
+                <a href="mailto:gokulnathaidscmsce@gmail.com" class="nav-cta btn-primary" id="header-contact-btn">Get In Touch</a>
+            </div>
+            
+            <button class="mobile-menu-toggle" id="mobile-toggle" aria-label="Toggle navigation menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+    </header>
+ 
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-nav" id="mobile-nav">
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#github-showcase" class="mobile-link">Code</a>
+        <a href="#timeline" class="mobile-link">Timeline</a>
+        <a href="#certificates" class="mobile-link">Credentials</a>
+        <a href="#insights" class="mobile-link">Insights</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+        <div class="mobile-actions">
+            <button class="btn-secondary w-full text-center" id="theme-toggle-mobile" style="margin-bottom: 12px; gap: 8px;">
+                <span class="toggle-icon">🌓</span> Toggle Theme
+            </button>
+            <button class="recruiter-toggle-btn w-full mb-12" id="recruiter-toggle-mobile" style="margin-bottom: 12px; justify-content: center;">
+                <span class="toggle-icon">⚡</span>
+                <span class="toggle-text">Recruiter Mode</span>
+            </button>
+            <button class="btn-secondary w-full text-center" id="download-cv-btn-mobile">
+                <span class="btn-icon">📥</span> Download Resume
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="badge-container">
+                        <span class="hero-badge">B.Tech AI & Data Science Student</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Gokulnath Raja</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        I build <span id="typewriter-text" class="cursor"></span>
+                    </h2>
+                    <p class="hero-description">
+                        An Artificial Intelligence and Data Science undergraduate at CMS College of Engineering. I specialize in Python, Machine Learning, and UI/UX design, creating clean, data-driven solutions for real-world challenges.
+                    </p>
+                    <div class="hero-ctas">
+                        <a href="#projects" class="btn-primary" id="hero-projects-btn">Explore Projects</a>
+                        <button class="btn-secondary" id="hero-recruiter-btn">
+                            <span class="btn-icon">⚡</span> Recruiter Scan
+                        </button>
+                        <button class="btn-secondary" id="hero-download-cv-btn">
+                            <span class="btn-icon">📥</span> Download CV
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="hex-grid-container">
+                        <canvas id="hero-particles"></canvas>
+                        <svg class="hex-grid-svg" viewBox="0 0 100 100" fill="none">
+                            <polygon points="50,15 90,38 90,82 50,95 10,82 10,38" class="hex-outer" />
+                            <polygon points="50,25 82,44 82,76 50,85 18,76 18,44" class="hex-inner" />
+                            <!-- Floating Data Nodes inside Hexagon -->
+                            <circle cx="50" cy="55" r="4" class="node central-node" />
+                            <circle cx="32" cy="45" r="3" class="node node-1" />
+                            <circle cx="68" cy="45" r="3" class="node node-2" />
+                            <circle cx="50" cy="80" r="3" class="node node-3" />
+                            <line x1="50" y1="55" x2="32" y2="45" class="data-link" />
+                            <line x1="50" y1="55" x2="68" y2="45" class="data-link" />
+                            <line x1="50" y1="55" x2="50" y2="80" class="data-link" />
+                        </svg>
+                        <div class="floating-tech-badge badge-python">Python</div>
+                        <div class="floating-tech-badge badge-ml">ML</div>
+                        <div class="floating-tech-badge badge-ui">UI/UX</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recruiter Dashboard (Highlighted in Recruiter Mode) -->
+        <section id="recruiter-dashboard" class="dashboard-section hidden-by-default">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-tag glow">Recruiter Quick-Scan</span>
+                    <h2 class="section-title">Professional Overview</h2>
+                    <p class="section-subtitle">Key metrics and highlights compiled for quick evaluation.</p>
+                </div>
+                <div class="dashboard-grid">
+                    <div class="dashboard-card">
+                        <div class="card-icon-wrapper">🎓</div>
+                        <h3>Education</h3>
+                        <p class="highlight">B.Tech in AI & Data Science</p>
+                        <p class="detail">CMS College of Engineering (2024-2028)</p>
+                    </div>
+                    <div class="dashboard-card">
+                        <div class="card-icon-wrapper">📜</div>
+                        <h3>Core Credential</h3>
+                        <p class="highlight">Python for Data Science</p>
+                        <p class="detail">Certified by IIT Madras (NPTEL)</p>
+                    </div>
+                    <div class="dashboard-card">
+                        <div class="card-icon-wrapper">💻</div>
+                        <h3>Key Projects</h3>
+                        <p class="highlight">4 Completed Systems</p>
+                        <p class="detail">Focused on Predictive ML, Health-Tech & VR</p>
+                    </div>
+                    <div class="dashboard-card">
+                        <div class="card-icon-wrapper">🛠️</div>
+                        <h3>Stack Strength</h3>
+                        <p class="highlight">Python, ML, Figma, C++</p>
+                        <p class="detail">Data analysis with Pandas & NumPy</p>
+                    </div>
+                </div>
+
+                <!-- Recruiter Quick Stats & Skills Comparison -->
+                <div class="recruiter-details-grid">
+                    <div class="recruiter-details-card">
+                        <h3>Match Matrix</h3>
+                        <div class="match-matrix-row">
+                            <span class="matrix-label">Python & Data Analytics</span>
+                            <div class="matrix-meter-bg"><div class="matrix-meter-fill fill-90"></div></div>
+                            <span class="matrix-percentage">90%</span>
+                        </div>
+                        <div class="match-matrix-row">
+                            <span class="matrix-label">Predictive ML Modeling</span>
+                            <div class="matrix-meter-bg"><div class="matrix-meter-fill fill-75"></div></div>
+                            <span class="matrix-percentage">75%</span>
+                        </div>
+                        <div class="match-matrix-row">
+                            <span class="matrix-label">UI/UX Wireframing & Prototyping</span>
+                            <div class="matrix-meter-bg"><div class="matrix-meter-fill fill-80"></div></div>
+                            <span class="matrix-percentage">80%</span>
+                        </div>
+                        <div class="match-matrix-row">
+                            <span class="matrix-label">Systems Design (C/C++)</span>
+                            <div class="matrix-meter-bg"><div class="matrix-meter-fill fill-70"></div></div>
+                            <span class="matrix-percentage">70%</span>
+                        </div>
+                    </div>
+                    <div class="recruiter-details-card">
+                        <h3>Quick Candidate Profile</h3>
+                        <ul class="candidate-bullets">
+                            <li><strong>Core Competency:</strong> Bridging ML algorithms with visually polished user experiences.</li>
+                            <li><strong>Target Roles:</strong> AI Developer Intern, Data Analyst Intern, Frontend UI/UX Developer.</li>
+                            <li><strong>Academic Excellence:</strong> Active symposium participant; technical paper presenter on Virtual Reality.</li>
+                            <li><strong>Collaboration:</strong> Proven team coordination in hackathons (Bugslayer'26, AI Consortium).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="recruiter-actions">
+                    <a href="mailto:gokulnathaidscmsce@gmail.com" class="btn-primary">
+                        <span class="btn-icon">📧</span> Contact Gokulnath
+                    </a>
+                    <a href="https://linkedin.com/in/gokulnath-cmsce" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                        <span class="btn-icon">🔗</span> LinkedIn Profile
+                    </a>
+                    <button class="btn-secondary" id="recruiter-download-cv">
+                        <span class="btn-icon">📥</span> Download PDF Resume
+                    </button>
+                    <button class="btn-text-link" id="exit-recruiter-mode">
+                        Exit Recruiter Mode
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section scroll-reveal">
+            <div class="container grid-2">
+                <div class="about-visual">
+                    <div class="image-wrapper">
+                        <!-- High-tech Profile Photo with rotating rings -->
+                        <div class="abstract-avatar">
+                            <div class="avatar-ring-1"></div>
+                            <div class="avatar-ring-2"></div>
+                            <img src="profile.jpg" alt="Gokulnath Raja" class="avatar-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="section-tag">About Me</span>
+                    <h2 class="section-title">Engineering Intelligence</h2>
+                    <p class="about-text">
+                        I am currently pursuing my <strong>B.Tech in Artificial Intelligence and Data Science</strong>. I have always been fascinated by how data can be leveraged to forecast outcomes, assist human health, and shape future interactions. 
+                    </p>
+                    <p class="about-text">
+                        With a solid foundation in Python, Machine Learning, and Natural Language Processing, I build predictive models and visual dashboards that transform complex datasets into clear, actionable advice.
+                    </p>
+                    <p class="about-text">
+                        Beyond backend ML, I appreciate clean interfaces. My workshop experiences in <strong>UI/UX Design with Figma</strong> allow me to bridge the gap between complex algorithms and the humans who use them.
+                    </p>
+                    
+                    <div class="personal-info-grid">
+                        <div class="info-item">
+                            <span class="info-label">Current Role</span>
+                            <span class="info-value">Undergraduate Student</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">University</span>
+                            <span class="info-value">CMS College of Eng.</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Location</span>
+                            <span class="info-value">Namakkal, TN, India</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Email</span>
+                            <span class="info-value">gokulnathaidscmsce@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section scroll-reveal">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-tag">Tech Stack</span>
+                    <h2 class="section-title">My Capabilities</h2>
+                    <p class="section-subtitle">Programming languages, tools, and data science libraries in my workflow.</p>
+                </div>
+                
+                <div class="skills-tab-container">
+                    <div class="skills-tabs">
+                        <button class="tab-btn active" data-tab="languages">Languages</button>
+                        <button class="tab-btn" data-tab="data-science">Data Science</button>
+                        <button class="tab-btn" data-tab="tools">Tools & Methods</button>
+                    </div>
+
+                    <div class="tab-content active" id="languages">
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <div class="skill-info">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="skill-bar-outer"><div class="skill-bar-inner" style="width: 90%;"></div></div>
+                                <p class="skill-desc">Primary language for ML modeling, scripting, and data manipulation.</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-info">
+                                    <span class="skill-name">HTML/CSS</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar-outer"><div class="skill-bar-inner" style="width: 80%;"></div></div>
+                                <p class="skill-desc">Building accessible, responsive web interfaces and dashboards.</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-info">
+                                    <span class="skill-name">UI/UX Design</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar-outer"><div class="skill-bar-inner" style="width: 75%;"></div></div>
+                                <p class="skill-desc">Creating layouts, user flows, and wireframes in Figma.</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-info">
+                                    <span class="skill-name">C++</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="skill-bar-outer"><div class="skill-bar-inner" style="width: 70%;"></div></div>
+                                <p class="skill-desc">Fundamental programming, object-oriented concepts, and structures.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="data-science">
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <div class="skill-info">
+                                    <span class="skill-name">Pandas</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar-outer"><div class="skill-bar-inner" style="width: 85%;"></div></div>
+                                <p class="skill-desc">Data scrubbing, transformation, and structural manipulation.</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-info">
+                                    <span class="skill-name">NumPy</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar-outer"><div class="skill-bar-inner" style="width: 80%;"></div></div>
+                                <p class="skill-desc">Mathematical computations, matrix arrays, and linear algebra.</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-info">
+                                    <span class="skill-name">Matplotlib</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar-outer"><div class="skill-bar-inner" style="width: 75%;"></div></div>
+                                <p class="skill-desc">Plotting graphs, charts, and custom data visualizations.</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-info">
+                                    <span class="skill-name">Machine Learning</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar-outer"><div class="skill-bar-inner" style="width: 75%;"></div></div>
+                                <p class="skill-desc">Classification, regression, and model preprocessing concepts.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="tools">
+                        <div class="skills-grid">
+                            <div class="skill-card">
+                                <div class="skill-info">
+                                    <span class="skill-name">Figma</span>
+                                    <span class="skill-percentage">80%</span>
+                                </div>
+                                <div class="skill-bar-outer"><div class="skill-bar-inner" style="width: 80%;"></div></div>
+                                <p class="skill-desc">High-fidelity prototype designs, wireframes, and UI mockups.</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-info">
+                                    <span class="skill-name">Git & GitHub</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="skill-bar-outer"><div class="skill-bar-inner" style="width: 75%;"></div></div>
+                                <p class="skill-desc">Version control, branch management, and collaborative development.</p>
+                            </div>
+                            <div class="skill-card">
+                                <div class="skill-info">
+                                    <span class="skill-name">VS Code / Eclipse</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="skill-bar-outer"><div class="skill-bar-inner" style="width: 85%;"></div></div>
+                                <p class="skill-desc">Primary IDEs for development, linting, and debugging.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section scroll-reveal">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-tag">Showcase</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Real-world projects developed for hackathons, symposiums, and coursework.</p>
+                </div>
+                
+                <div class="projects-grid">
+                    <!-- Project 1: AquaSafe AI -->
+                    <article class="project-card" data-project="aquasafe">
+                        <div class="project-img-wrapper">
+                            <div class="project-img-fallback p1-gradient">
+                                <span class="project-badge-top">ML & Analytics</span>
+                                <div class="project-graphic">💧🧪📊</div>
+                            </div>
+                        </div>
+                        <div class="project-info-summary">
+                            <span class="project-org">Bugslayer’26</span>
+                            <h3 class="project-card-title">AquaSafe AI</h3>
+                            <p class="project-card-desc">Waterborne disease prediction dashboard based on water quality parameters like pH, turbidity, and temperature.</p>
+                            <div class="project-tags">
+                                <span class="p-tag">Python</span>
+                                <span class="p-tag">Machine Learning</span>
+                                <span class="p-tag">Dashboard</span>
+                            </div>
+                            <button class="btn-text" aria-haspopup="dialog" aria-controls="modal-aquasafe">View Details &rarr;</button>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Healthcare AI Chatbot -->
+                    <article class="project-card" data-project="chatbot">
+                        <div class="project-img-wrapper">
+                            <div class="project-img-fallback p2-gradient">
+                                <span class="project-badge-top">NLP / Conversational AI</span>
+                                <div class="project-graphic">💬🤖🏥</div>
+                            </div>
+                        </div>
+                        <div class="project-info-summary">
+                            <span class="project-org">AI Consortium ’26</span>
+                            <h3 class="project-card-title">Healthcare AI Chatbot</h3>
+                            <p class="project-card-desc">Bilingual English/Tamil AI assistant chatbot designed for rapid symptom analysis and healthcare suggestions.</p>
+                            <div class="project-tags">
+                                <span class="p-tag">Python</span>
+                                <span class="p-tag">NLP</span>
+                                <span class="p-tag">Bilingual</span>
+                            </div>
+                            <button class="btn-text" aria-haspopup="dialog" aria-controls="modal-chatbot">View Details &rarr;</button>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Healthcare Monitoring Dashboard -->
+                    <article class="project-card" data-project="monitoring">
+                        <div class="project-img-wrapper">
+                            <div class="project-img-fallback p3-gradient">
+                                <span class="project-badge-top">IoT & Visualization</span>
+                                <div class="project-graphic">📈❤️🌡️</div>
+                            </div>
+                        </div>
+                        <div class="project-info-summary">
+                            <span class="project-org">AI Consortium ’26</span>
+                            <h3 class="project-card-title">Healthcare Monitoring Dashboard</h3>
+                            <p class="project-card-desc">AI health dashboard providing graphical analysis and real-time trends for SpO2, heart rate, and temperature.</p>
+                            <div class="project-tags">
+                                <span class="p-tag">Matplotlib</span>
+                                <span class="p-tag">Data Vis</span>
+                                <span class="p-tag">Python</span>
+                            </div>
+                            <button class="btn-text" aria-haspopup="dialog" aria-controls="modal-monitoring">View Details &rarr;</button>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: VR Platform -->
+                    <article class="project-card" data-project="vr-learning">
+                        <div class="project-img-wrapper">
+                            <div class="project-img-fallback p4-gradient">
+                                <span class="project-badge-top">VR / Immersive Tech</span>
+                                <div class="project-graphic">🕶️📐🧠</div>
+                            </div>
+                        </div>
+                        <div class="project-info-summary">
+                            <span class="project-org">TEKCLUSTER’25</span>
+                            <h3 class="project-card-title">VR Learning Platform</h3>
+                            <p class="project-card-desc">Virtual Reality application designed for interactive learning via 3D VR glasses, earning top symposium placement.</p>
+                            <div class="project-tags">
+                                <span class="p-tag">3D VR</span>
+                                <span class="p-tag">UX Design</span>
+                                <span class="p-tag">Edu-Tech</span>
+                            </div>
+                            <button class="btn-text" aria-haspopup="dialog" aria-controls="modal-vr-learning">View Details &rarr;</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- GitHub Showcase Section -->
+        <section id="github-showcase" class="github-section scroll-reveal">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-tag">Code Activity</span>
+                    <h2 class="section-title">Open Source & Repositories</h2>
+                    <p class="section-subtitle">A simulated real-time overview of code contributions and active codebases.</p>
+                </div>
+
+                <!-- GitHub Stats Summary Grid -->
+                <div class="github-stats-grid">
+                    <div class="git-stat-card">
+                        <span class="git-stat-num" id="git-commits">342</span>
+                        <span class="git-stat-label">Commits This Year</span>
+                    </div>
+                    <div class="git-stat-card">
+                        <span class="git-stat-num" id="git-repos">4</span>
+                        <span class="git-stat-label">Active Repos</span>
+                    </div>
+                    <div class="git-stat-card">
+                        <span class="git-stat-num" id="git-stars">18</span>
+                        <span class="git-stat-label">Stars Received</span>
+                    </div>
+                    <div class="git-stat-card">
+                        <span class="git-stat-num" id="git-contribs">428</span>
+                        <span class="git-stat-label">Contributions</span>
+                    </div>
+                </div>
+
+                <!-- Contribution Calendar widget -->
+                <div class="contrib-calendar-wrapper">
+                    <div class="calendar-header">
+                        <h4>Contribution Calendar (2025-2026)</h4>
+                        <div class="calendar-legend">
+                            <span>Less</span>
+                            <span class="legend-box lvl-0"></span>
+                            <span class="legend-box lvl-1"></span>
+                            <span class="legend-box lvl-2"></span>
+                            <span class="legend-box lvl-3"></span>
+                            <span class="legend-box lvl-4"></span>
+                            <span>More</span>
+                        </div>
+                    </div>
+                    <div class="calendar-scroll-container">
+                        <div class="calendar-grid" id="calendar-grid">
+                            <!-- Populated dynamically via JS -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Repository Tabs Filter -->
+                <div class="repo-filter-container">
+                    <div class="repo-tabs">
+                        <button class="repo-tab-btn active" data-repo-filter="all">All Repositories</button>
+                        <button class="repo-tab-btn" data-repo-filter="python">Python</button>
+                        <button class="repo-tab-btn" data-repo-filter="web">Web & Figma</button>
+                    </div>
+
+                    <div class="repo-grid" id="repo-grid">
+                        <!-- Repo 1: aquasafe-ai -->
+                        <div class="repo-card" data-repo-lang="python">
+                            <div class="repo-card-header">
+                                <span class="repo-icon">📁</span>
+                                <h4 class="repo-name"><a href="https://github.com/gokulnath-cmsce/aquasafe-ai" target="_blank" rel="noopener noreferrer">aquasafe-ai</a></h4>
+                                <span class="repo-badge-status">Public</span>
+                            </div>
+                            <p class="repo-desc">ML model and analytics dashboard for water purity classification and waterborne disease forecasting based on pH and turbidity parameters.</p>
+                            <div class="repo-footer">
+                                <span class="repo-lang"><span class="repo-lang-indicator python"></span>Python</span>
+                                <span class="repo-stat">⭐ 6</span>
+                                <span class="repo-stat">🍴 2</span>
+                            </div>
+                        </div>
+
+                        <!-- Repo 2: healthcare-ai-chatbot -->
+                        <div class="repo-card" data-repo-lang="python">
+                            <div class="repo-card-header">
+                                <span class="repo-icon">📁</span>
+                                <h4 class="repo-name"><a href="https://github.com/gokulnath-cmsce/healthcare-ai-chatbot" target="_blank" rel="noopener noreferrer">healthcare-ai-chatbot</a></h4>
+                                <span class="repo-badge-status">Public</span>
+                            </div>
+                            <p class="repo-desc">Bilingual English/Tamil text triage bot using NLP techniques for rapid diagnostic keyword matching and localized self-care recommendations.</p>
+                            <div class="repo-footer">
+                                <span class="repo-lang"><span class="repo-lang-indicator python"></span>Python</span>
+                                <span class="repo-stat">⭐ 5</span>
+                                <span class="repo-stat">🍴 1</span>
+                            </div>
+                        </div>
+
+                        <!-- Repo 3: healthcare-monitoring-dashboard -->
+                        <div class="repo-card" data-repo-lang="python">
+                            <div class="repo-card-header">
+                                <span class="repo-icon">📁</span>
+                                <h4 class="repo-name"><a href="https://github.com/gokulnath-cmsce/healthcare-monitoring-dashboard" target="_blank" rel="noopener noreferrer">healthcare-monitoring-dashboard</a></h4>
+                                <span class="repo-badge-status">Public</span>
+                            </div>
+                            <p class="repo-desc">Data visualization suite rendering real-time graphs for biometric sensor data feeds (oxygen levels, heart rate, body temperature) using Matplotlib.</p>
+                            <div class="repo-footer">
+                                <span class="repo-lang"><span class="repo-lang-indicator python"></span>Python</span>
+                                <span class="repo-stat">⭐ 4</span>
+                                <span class="repo-stat">🍴 0</span>
+                            </div>
+                        </div>
+
+                        <!-- Repo 4: vr-learning-design -->
+                        <div class="repo-card" data-repo-lang="web">
+                            <div class="repo-card-header">
+                                <span class="repo-icon">📁</span>
+                                <h4 class="repo-name"><a href="https://github.com/gokulnath-cmsce/vr-learning-design" target="_blank" rel="noopener noreferrer">vr-learning-design</a></h4>
+                                <span class="repo-badge-status">Public</span>
+                            </div>
+                            <p class="repo-desc">Layout maps, Figma asset exports, and structural blueprints for the 3D Virtual Reality educational platform designed for VR cardboard headsets.</p>
+                            <div class="repo-footer">
+                                <span class="repo-lang"><span class="repo-lang-indicator web"></span>UI/UX & Figma</span>
+                                <span class="repo-stat">⭐ 3</span>
+                                <span class="repo-stat">🍴 0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section id="timeline" class="timeline-section scroll-reveal">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-tag">The Journey</span>
+                    <h2 class="section-title">Education & Milestones</h2>
+                    <p class="section-subtitle">Chronological record of academic progress, certifications, and technical accomplishments.</p>
+                </div>
+
+                <div class="timeline-container">
+                    <div class="timeline-line"></div>
+                    
+                    <!-- Milestone 1 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">June 2026</span>
+                            <h3>UI/UX-Figma Workshop</h3>
+                            <p class="timeline-source">Image Creative Education</p>
+                            <p class="timeline-desc">Completed specialized training covering interface wireframing, component libraries, responsive grid alignments, and high-fidelity interactive prototyping in Figma.</p>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 2 -->
+                    <div class="timeline-item right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Present (2026)</span>
+                            <h3>Python for Data Science</h3>
+                            <p class="timeline-source">IIT Madras & Masai School</p>
+                            <p class="timeline-desc">Enrolled in the NPTEL Python for Data Science curriculum. Gaining expertise in structured data analysis, exploratory data visualization (EDA), and data parsing techniques.</p>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 3 -->
+                    <div class="timeline-item left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">November 2025</span>
+                            <h3>C Programming Workshop</h3>
+                            <p class="timeline-source">Pro Aggressive Techie</p>
+                            <p class="timeline-desc">Attended bootcamp covering syntax design, pointers, memory allocation, structure architectures, and algorithm implementations in standard C.</p>
+                        </div>
+                    </div>
+
+                    <!-- Milestone 4 -->
+                    <div class="timeline-item right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2024 - 2028</span>
+                            <h3>Bachelor of Technology</h3>
+                            <p class="timeline-source">CMS College of Engineering, Namakkal</p>
+                            <p class="timeline-desc">Undergraduate candidate in Artificial Intelligence and Data Science. Maintaining strong foundational knowledge in stats, programming, neural systems, and NLP.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates & Credentials Section -->
+        <section id="certificates" class="certificates-section scroll-reveal">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-tag">Credentials</span>
+                    <h2 class="section-title">Certifications & Accreditations</h2>
+                    <p class="section-subtitle">Verified programs and technical courses completed during my academic studies.</p>
+                </div>
+
+                <div class="certificates-grid">
+                    <!-- Cert 1: Python for Data Science -->
+                    <div class="cert-card">
+                        <div class="cert-icon-box">🐍</div>
+                        <div class="cert-info">
+                            <span class="cert-provider">IIT Madras (NPTEL)</span>
+                            <h3>Python for Data Science</h3>
+                            <p class="cert-desc">Detailed curriculum covering NumPy matrix operations, Pandas data cleansing, Matplotlib visualization, exploratory data analysis, and regression modeling.</p>
+                            <div class="cert-meta">
+                                <span class="cert-badge verified">✓ Verified</span>
+                                <span class="cert-date">Ongoing / Present</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cert 2: UI/UX Figma -->
+                    <div class="cert-card">
+                        <div class="cert-icon-box">📐</div>
+                        <div class="cert-info">
+                            <span class="cert-provider">Image Creative Education</span>
+                            <h3>UI/UX Design & Figma Prototyping</h3>
+                            <p class="cert-desc">Professional interface design training. Covered typography scales, grid hierarchies, reusable component structures, auto-layout, and clickable user flows.</p>
+                            <div class="cert-meta">
+                                <span class="cert-badge verified">✓ Completed</span>
+                                <span class="cert-date">Jun 2026</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cert 3: C Programming -->
+                    <div class="cert-card">
+                        <div class="cert-icon-box">⚙️</div>
+                        <div class="cert-info">
+                            <span class="cert-provider">Pro Aggressive Techie</span>
+                            <h3>C Programming Bootcamp</h3>
+                            <p class="cert-desc">Structured code building focusing on loops, control branches, multi-dimensional structures, memory pointers, allocations, and core algorithmic procedures.</p>
+                            <div class="cert-meta">
+                                <span class="cert-badge verified">✓ Completed</span>
+                                <span class="cert-date">Nov 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials-section scroll-reveal">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-tag">Reviews</span>
+                    <h2 class="section-title">Collaborator Feedback</h2>
+                    <p class="section-subtitle">Feedback and recognition received from peers and project partners.</p>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="quote-icon">“</div>
+                        <p class="testimonial-text">Gokulnath's ML model allowed us to rapidly map water purity and identify hazard index thresholds at the Bugslayer hackathon. His focus on model testing and clear parameter visualization was key to our project success.</p>
+                        <div class="testimonial-author">
+                            <h4>S. Vignesh</h4>
+                            <span>Development Partner & Team Lead, Bugslayer’26</span>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="quote-icon">“</div>
+                        <p class="testimonial-text">His ability to bridge complex algorithms with a bilingual user experience made his chatbot stand out. The English/Tamil interface wasn't just code-efficient; the Figma-led UI layout felt clean and accessible for local users.</p>
+                        <div class="testimonial-author">
+                            <h4>Dr. A. K. Lakshmi</h4>
+                            <span>Project Mentor, AI Consortium ’26</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research & Blogs (Insights) Section -->
+        <section id="insights" class="insights-section scroll-reveal">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="section-tag">Insights</span>
+                    <h2 class="section-title">Research & Blogs</h2>
+                    <p class="section-subtitle">Symposium papers and written thoughts on machine learning and user experience design.</p>
+                </div>
+
+                <div class="insights-grid">
+                    <!-- Column 1: Research Paper Card -->
+                    <div class="research-card">
+                        <div class="insight-header">
+                            <span class="insight-category">Research Paper</span>
+                            <span class="insight-meta">TEKCLUSTER '25</span>
+                        </div>
+                        <h3 class="insight-title">Virtual Reality in Classrooms: Designing a Low-Cost Stereoscopic VR UX on Cardboard</h3>
+                        <p class="insight-desc">
+                            A technical paper presented at the 13th National Level Technical Symposium. This work establishes a stereoscopic camera layout, UI placement margins, and performance optimization baselines required to deliver comfortable, nausea-free educational simulations using mobile VR cardboard devices.
+                        </p>
+                        <a href="https://github.com/gokulnath-cmsce/vr-learning-design" target="_blank" rel="noopener noreferrer" class="insight-link">
+                            <span>Read Technical Framework</span> &rarr;
+                        </a>
+                    </div>
+
+                    <!-- Column 2: Technical Blogs Card -->
+                    <div class="blog-card">
+                        <div class="insight-header">
+                            <span class="insight-category">Technical Blog Posts</span>
+                            <span class="insight-meta">Thought Pieces</span>
+                        </div>
+                        <div class="blog-list">
+                            <!-- Blog 1 -->
+                            <div class="blog-item">
+                                <div class="blog-item-header">
+                                    <span>AI & NLP</span>
+                                    <span>5 min read</span>
+                                </div>
+                                <h4 class="blog-item-title">Bilingual NLP: Building Tamil & English Intent Triages</h4>
+                                <p class="blog-item-summary">
+                                    Exploring intent matching and text sanitization rules in vernacular applications to bridge linguistic barriers and provide immediate care recommendations.
+                                </p>
+                                <a href="https://github.com/gokulnath-cmsce/healthcare-ai-chatbot" target="_blank" rel="noopener noreferrer" class="insight-link">Read Post</a>
+                            </div>
+
+                            <!-- Blog 2 -->
+                            <div class="blog-item">
+                                <div class="blog-item-header">
+                                    <span>Data Visualizations</span>
+                                    <span>4 min read</span>
+                                </div>
+                                <h4 class="blog-item-title">Designing UI-Grade Dark-Mode Charts using Raw Matplotlib</h4>
+                                <p class="blog-item-summary">
+                                    A practical guide on overriding matplotlib default grid, spine, and typography configs to match premium glassmorphic dark dashboards.
+                                </p>
+                                <a href="https://github.com/gokulnath-cmsce/healthcare-monitoring-dashboard" target="_blank" rel="noopener noreferrer" class="insight-link">Read Post</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section scroll-reveal">
+            <div class="container grid-2">
+                <div class="contact-info">
+                    <span class="section-tag">Let's Connect</span>
+                    <h2 class="section-title">Start a Conversation</h2>
+                    <p class="contact-desc">
+                        I am currently looking for internship opportunities in AI, Machine Learning, and Data Analytics, or collaborations on interesting software projects. Feel free to reach out!
+                    </p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:gokulnathaidscmsce@gmail.com" class="contact-link">gokulnathaidscmsce@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">🔗</div>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <a href="https://linkedin.com/in/gokulnath-cmsce" target="_blank" rel="noopener noreferrer" class="contact-link">linkedin.com/in/gokulnath-cmsce</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <h4>Phone</h4>
+                                <a href="tel:8148359508" class="contact-link">+91 81483 59508</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Describe your project, internship opportunity, or question..."></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary w-full">Send Message</button>
+                        <div id="form-feedback" class="form-feedback"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="footer-copyright">&copy; 2026 Gokulnath Raja. Built with premium web aesthetics.</p>
+            <div class="footer-links">
+                <a href="https://linkedin.com/in/gokulnath-cmsce" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+                <a href="mailto:gokulnathaidscmsce@gmail.com" class="footer-link">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PROJECT MODALS (LIGHTBOX DIALOGS) -->
+    
+    <!-- Modal 1: AquaSafe AI -->
+    <div id="modal-aquasafe" class="modal" role="dialog" aria-modal="true" aria-labelledby="m1-title">
+        <div class="modal-backdrop"></div>
+        <div class="modal-wrapper">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-body">
+                <div class="modal-hero p1-gradient">
+                    <span class="modal-badge">Machine Learning</span>
+                    <h2 id="m1-title" class="modal-title">AquaSafe AI</h2>
+                    <span class="modal-subtitle">Waterborne Disease Prediction Dashboard</span>
+                </div>
+                <!-- Interactive High-Fidelity UI Graphic -->
+                <div class="modal-visual-preview">
+                    <svg class="preview-svg" viewBox="0 0 800 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="800" height="300" rx="16" fill="#0f172a" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+                        <circle cx="50" cy="50" r="12" fill="#00f2fe" fill-opacity="0.1"/>
+                        <path d="M47 50C47 48.3431 48.3431 47 50 47C51.6569 47 53 48.3431 53 50C53 52.5 50 56 50 56C50 56 47 52.5 47 50Z" fill="#00f2fe"/>
+                        <text x="75" y="55" fill="#f8fafc" font-family="Outfit" font-size="16" font-weight="600">AquaSafe Inference Terminal</text>
+                        <!-- Grid lines -->
+                        <line x1="50" y1="90" x2="750" y2="90" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+                        <line x1="50" y1="190" x2="750" y2="190" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+                        <!-- Threshold levels -->
+                        <rect x="50" y="110" width="180" height="60" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)"/>
+                        <text x="65" y="132" fill="#94a3b8" font-family="Inter" font-size="11">TURBIDITY INPUT</text>
+                        <text x="65" y="158" fill="#f8fafc" font-family="Outfit" font-size="20" font-weight="bold">4.2 NTU</text>
+                        
+                        <rect x="250" y="110" width="180" height="60" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)"/>
+                        <text x="265" y="132" fill="#94a3b8" font-family="Inter" font-size="11">pH MEASUREMENT</text>
+                        <text x="265" y="158" fill="#f8fafc" font-family="Outfit" font-size="20" font-weight="bold">8.1 pH</text>
+
+                        <!-- Risk Assessment Gage -->
+                        <rect x="470" y="110" width="280" height="150" rx="12" fill="rgba(0, 242, 254, 0.03)" stroke="rgba(0, 242, 254, 0.15)"/>
+                        <text x="490" y="135" fill="#00f2fe" font-family="Outfit" font-size="13" font-weight="600" letter-spacing="1">PREDICTED RISK INDEX</text>
+                        <path d="M500 200 A 45 45 0 0 1 590 200" stroke="rgba(255,255,255,0.08)" stroke-width="12" stroke-linecap="round" fill="none"/>
+                        <path d="M500 200 A 45 45 0 0 1 570 168" stroke="#00f2fe" stroke-width="12" stroke-linecap="round" fill="none"/>
+                        <text x="610" y="195" fill="#f8fafc" font-family="Outfit" font-size="28" font-weight="bold">72%</text>
+                        <text x="610" y="215" fill="#9d4edd" font-family="Inter" font-size="12" font-weight="600">MODERATE HAZARD</text>
+                        <text x="490" y="245" fill="#94a3b8" font-family="Inter" font-size="11">Recommendation: Boiling required before intake.</text>
+                    </svg>
+                </div>
+                <div class="modal-content-grid">
+                    <div class="modal-main">
+                        <section class="modal-section">
+                            <h3>Overview</h3>
+                            <p>Developed for the Bugslayer'26 hackathon, AquaSafe AI is a predictive system designed to evaluate water safety. By analyzing physical-chemical parameters, the model assesses water purity and forecasts potential risk indices for waterborne illnesses.</p>
+                        </section>
+                        
+                        <div class="modal-section-split">
+                            <div class="modal-sub-section">
+                                <h3>The Problem</h3>
+                                <p>Unsafe drinking water leads to significant outbreaks of gastrointestinal diseases. In remote settings, access to immediate biological laboratory testing is limited, necessitating a rapid mathematical assessment of raw water health hazard based on instantly measurable parameters.</p>
+                            </div>
+                            <div class="modal-sub-section">
+                                <h3>The Solution</h3>
+                                <p>An AI-powered dashboard that uses machine learning algorithms to map water data (pH, turbidity, temperature) directly to health hazard classifications. It predicts safe/unsafe thresholds and generates warnings immediately upon inputting variables.</p>
+                            </div>
+                        </div>
+
+                        <section class="modal-section">
+                            <h3>Key Features</h3>
+                            <ul>
+                                <li>Real-time classification based on user-entered parameters.</li>
+                                <li>Risk prediction levels (Low, Medium, Critical Hazard) via supervised ML models.</li>
+                                <li>Responsive visual interface to display status indicators using CSS color states.</li>
+                            </ul>
+                        </section>
+
+                        <section class="modal-section">
+                            <h3>Challenges & Learnings</h3>
+                            <p>A primary challenge was handling non-linear boundaries in water parameters, where temperature combined with slight pH offsets increases risk exponentially. Standard linear classification was insufficient; therefore, we explored tree-based models and polynomial features to properly capture interactions.</p>
+                        </section>
+
+                        <section class="modal-section">
+                            <h3>Future Improvements</h3>
+                            <p>Integrating telemetry hardware (such as pH/temperature sensors linked to a micro-controller) to stream real-time environmental data directly to the web dashboard via an API, removing the need for manual data entry.</p>
+                        </section>
+                    </div>
+                    
+                    <aside class="modal-sidebar">
+                        <div class="sidebar-block">
+                            <h4>Technologies Used</h4>
+                            <div class="modal-tags">
+                                <span class="p-tag">Python</span>
+                                <span class="p-tag">Pandas</span>
+                                <span class="p-tag">NumPy</span>
+                                <span class="p-tag">Scikit-Learn</span>
+                                <span class="p-tag">HTML/CSS</span>
+                            </div>
+                        </div>
+                        <div class="sidebar-block">
+                            <h4>Results & Recognition</h4>
+                            <p class="sidebar-award">🏆 Bugslayer'26 Hackathon Presentation</p>
+                            <p>Proven accuracy in predicting hazard indices over tested water test-sets.</p>
+                        </div>
+                        <div class="sidebar-block">
+                            <h4>Links</h4>
+                            <a href="https://github.com/gokulnath-cmsce/aquasafe-ai" class="btn-primary w-full text-center" target="_blank" rel="noopener noreferrer">View GitHub Repository</a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Healthcare AI Chatbot -->
+    <div id="modal-chatbot" class="modal" role="dialog" aria-modal="true" aria-labelledby="m2-title">
+        <div class="modal-backdrop"></div>
+        <div class="modal-wrapper">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-body">
+                <div class="modal-hero p2-gradient">
+                    <span class="modal-badge">Natural Language Processing</span>
+                    <h2 id="m2-title" class="modal-title">Healthcare AI Chatbot</h2>
+                    <span class="modal-subtitle">AI Assistant for Health Management</span>
+                </div>
+                <!-- Interactive High-Fidelity UI Graphic -->
+                <div class="modal-visual-preview">
+                    <svg class="preview-svg" viewBox="0 0 800 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="800" height="300" rx="16" fill="#0f172a" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+                        <!-- Top status bar -->
+                        <rect width="800" height="50" rx="0" fill="#1e293b" fill-opacity="0.5"/>
+                        <circle cx="35" cy="25" r="6" fill="#10b981"/>
+                        <text x="50" y="29" fill="#f8fafc" font-family="Outfit" font-size="14" font-weight="600">Bilingual Health Assistant</text>
+                        
+                        <!-- Conversational Bubble 1 (User Tamil) -->
+                        <path d="M480 75 H730 A 10 10 0 0 1 740 85 V110 A 10 10 0 0 1 730 120 H490 A 10 10 0 0 1 480 110 V75" fill="#7928ca" fill-opacity="0.3" stroke="rgba(121,40,202,0.3)"/>
+                        <text x="495" y="94" fill="#f8fafc" font-family="Inter" font-size="12">எனக்கு காய்ச்சல் மற்றும் தலைவலி உள்ளது.</text>
+                        <text x="495" y="111" fill="rgba(255,255,255,0.6)" font-family="Inter" font-size="10">(I have a fever and headache.)</text>
+                        
+                        <!-- Conversational Bubble 2 (Bot Response) -->
+                        <path d="M60 140 H450 A 10 10 0 0 1 460 150 V210 A 10 10 0 0 1 450 220 H70 A 10 10 0 0 1 60 210 V140" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)"/>
+                        <text x="75" y="160" fill="#9d4edd" font-family="Outfit" font-size="11" font-weight="bold">AI BOT RESPONSE (TAMIL DETECTED)</text>
+                        <text x="75" y="180" fill="#f8fafc" font-family="Inter" font-size="12">பரிந்துரை: 1. உடல் வெப்பநிலையை சரிபார்க்கவும்.</text>
+                        <text x="75" y="196" fill="#f8fafc" font-family="Inter" font-size="12">2. போதுமான அளவு தண்ணீர் குடிக்கவும், ஓய்வெடுக்கவும்.</text>
+                        <text x="75" y="212" fill="rgba(255,255,255,0.5)" font-family="Inter" font-size="11">Warning: If temperature exceeds 102°F, consult a physician.</text>
+                        
+                        <!-- Input Bar -->
+                        <rect x="50" y="245" width="700" height="40" rx="20" fill="#1e293b" stroke="rgba(255,255,255,0.1)"/>
+                        <text x="75" y="269" fill="rgba(255,255,255,0.4)" font-family="Inter" font-size="13">Type symptoms here... (எ.கா: எனக்கு இருமல் உள்ளது)</text>
+                        <text x="710" y="270" fill="#00f2fe" font-family="Outfit" font-size="16" font-weight="bold">➔</text>
+                    </svg>
+                </div>
+                <div class="modal-content-grid">
+                    <div class="modal-main">
+                        <section class="modal-section">
+                            <h3>Overview</h3>
+                            <p>A bilingual (English and Tamil) conversational assistant built during the AI Consortium '26. The chatbot engages in dialog, extracts key symptoms mentioned by the user, and suggests preliminary care advice or recommends medical consultation.</p>
+                        </section>
+                        
+                        <div class="modal-section-split">
+                            <div class="modal-sub-section">
+                                <h3>The Problem</h3>
+                                <p>Many regional users in Tamil Nadu lack quick access to initial medical translation or basic triage tips. Traditional chatbots are English-only, creating barrier restrictions for vernacular speakers seeking primary guidance.</p>
+                            </div>
+                            <div class="modal-sub-section">
+                                <h3>The Solution</h3>
+                                <p>We developed a custom symptom-matching logic operating in both English and Tamil. By utilizing NLP techniques, the bot detects synonyms, processes spelling anomalies, and maps regional descriptions of illness to medical definitions.</p>
+                            </div>
+                        </div>
+
+                        <section class="modal-section">
+                            <h3>Key Features</h3>
+                            <ul>
+                                <li>Vernacular support for Tamil and English language input.</li>
+                                <li>Keyword tokenization and extraction of symptoms from unstructured user text.</li>
+                                <li>Dynamic suggestions for self-care and redirection warnings for severe cases.</li>
+                            </ul>
+                        </section>
+
+                        <section class="modal-section">
+                            <h3>Challenges & Learnings</h3>
+                            <p>Mapping Tamil text inputs, where phrasing can vary widely and transliterated English-Tamil (Tanglish) is common, was highly complex. Implementing text normalizers and structured dictionary mapping helped refine the accuracy of symptom extraction.</p>
+                        </section>
+
+                        <section class="modal-section">
+                            <h3>Future Improvements</h3>
+                            <p>Deploying transformer models for multilingual intents and expanding the corpus to include a larger database of local health center mapping.</p>
+                        </section>
+                    </div>
+                    
+                    <aside class="modal-sidebar">
+                        <div class="sidebar-block">
+                            <h4>Technologies Used</h4>
+                            <div class="modal-tags">
+                                <span class="p-tag">Python</span>
+                                <span class="p-tag">NLTK</span>
+                                <span class="p-tag">Bilingual NLP</span>
+                                <span class="p-tag">Figma Prototyping</span>
+                            </div>
+                        </div>
+                        <div class="sidebar-block">
+                            <h4>Results & Recognition</h4>
+                            <p class="sidebar-award">⭐ Top Project, AI Consortium '26</p>
+                            <p>Lauded for bilingual accessibility and UI design flow.</p>
+                        </div>
+                        <div class="sidebar-block">
+                            <h4>Links</h4>
+                            <a href="https://github.com/gokulnath-cmsce/healthcare-ai-chatbot" class="btn-primary w-full text-center" target="_blank" rel="noopener noreferrer">View GitHub Repository</a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Healthcare Monitoring Dashboard -->
+    <div id="modal-monitoring" class="modal" role="dialog" aria-modal="true" aria-labelledby="m3-title">
+        <div class="modal-backdrop"></div>
+        <div class="modal-wrapper">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-body">
+                <div class="modal-hero p3-gradient">
+                    <span class="modal-badge">Data Science & IoT</span>
+                    <h2 id="m3-title" class="modal-title">Healthcare Monitoring Dashboard</h2>
+                    <span class="modal-subtitle">AI Dashboard for Health Management</span>
+                </div>
+                <!-- Interactive High-Fidelity UI Graphic -->
+                <div class="modal-visual-preview">
+                    <svg class="preview-svg" viewBox="0 0 800 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="800" height="300" rx="16" fill="#0f172a" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+                        <!-- Chart Header -->
+                        <text x="40" y="45" fill="#f8fafc" font-family="Outfit" font-size="15" font-weight="600">Vital Vitals Trend Analysis</text>
+                        <!-- Grid lines -->
+                        <line x1="50" y1="80" x2="750" y2="80" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+                        <line x1="50" y1="140" x2="750" y2="140" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+                        <line x1="50" y1="200" x2="750" y2="200" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+                        
+                        <!-- Pulse Line Graphic -->
+                        <path d="M 50 140 L 150 140 L 180 90 L 200 190 L 220 140 L 320 140 L 340 100 L 360 170 L 380 140 L 480 140 L 500 80 L 520 200 L 540 140 L 640 140 L 660 110 L 680 160 L 700 140 L 750 140" stroke="#ff007f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        <!-- Highlight dots -->
+                        <circle cx="180" cy="90" r="5" fill="#ff007f"/>
+                        <circle cx="500" cy="80" r="5" fill="#ff007f"/>
+                        
+                        <!-- Metrics Overlaid -->
+                        <rect x="50" y="225" width="210" height="55" rx="8" fill="rgba(255, 0, 127, 0.04)" stroke="rgba(255, 0, 127, 0.15)"/>
+                        <text x="65" y="243" fill="#ff007f" font-family="Outfit" font-size="11" font-weight="600">HEART RATE</text>
+                        <text x="65" y="267" fill="#f8fafc" font-family="Outfit" font-size="18" font-weight="bold">78 BPM <span style="font-size:11px; font-weight:normal; color:#10b981;">(Normal)</span></text>
+
+                        <rect x="280" y="225" width="210" height="55" rx="8" fill="rgba(0, 242, 254, 0.04)" stroke="rgba(0, 242, 254, 0.15)"/>
+                        <text x="295" y="243" fill="#00f2fe" font-family="Outfit" font-size="11" font-weight="600">SPO2 LEVEL</text>
+                        <text x="295" y="267" fill="#f8fafc" font-family="Outfit" font-size="18" font-weight="bold">94% <span style="font-size:11px; font-weight:normal; color:#ef4444;">(Low Check)</span></text>
+
+                        <rect x="510" y="225" width="240" height="55" rx="8" fill="rgba(255, 255, 255, 0.02)" stroke="rgba(255, 255, 255, 0.05)"/>
+                        <text x="525" y="243" fill="#94a3b8" font-family="Outfit" font-size="11" font-weight="600">BODY TEMPERATURE</text>
+                        <text x="525" y="267" fill="#f8fafc" font-family="Outfit" font-size="18" font-weight="bold">98.6 °F <span style="font-size:11px; font-weight:normal; color:#10b981;">(Optimal)</span></text>
+                    </svg>
+                </div>
+                <div class="modal-content-grid">
+                    <div class="modal-main">
+                        <section class="modal-section">
+                            <h3>Overview</h3>
+                            <p>Created for AI Consortium '26, this health monitoring system acts as an analytics hub. It processes patient biometric data (oxygen levels, heart rate, body temperature) and outputs clean visual graph analyses showing baseline deviations.</p>
+                        </section>
+                        
+                        <div class="modal-section-split">
+                            <div class="modal-sub-section">
+                                <h3>The Problem</h3>
+                                <p>Medical vitals are frequently captured but rarely visualized in a consolidated, readable manner for patients. Raw biometric streams can look confusing, making anomalies hard to identify without dynamic graphing capabilities.</p>
+                            </div>
+                            <div class="modal-sub-section">
+                                <h3>The Solution</h3>
+                                <p>Built an interactive Python dashboard that uses Matplotlib to generate real-time graphs. The interface processes data feeds, checks against clinical safety thresholds, and flags out-of-bound biometrics visually.</p>
+                            </div>
+                        </div>
+
+                        <section class="modal-section">
+                            <h3>Key Features</h3>
+                            <ul>
+                                <li>Interactive plotting of vital trends (SpO2, bpm, °C/°F) over custom timeframes.</li>
+                                <li>Out-of-range visual alerts highlighting low oxygen (SpO2 &lt; 95%) or fever indicators.</li>
+                                <li>Consolidated final report card with averages and automated healthy recommendations.</li>
+                            </ul>
+                        </section>
+
+                        <section class="modal-section">
+                            <h3>Challenges & Learnings</h3>
+                            <p>Designing custom, beautiful dashboard charts with raw Matplotlib that match a dark web aesthetic required overriding many chart default parameters (e.g., configuring transparent grids, custom neon line colors, and antialiasing properties).</p>
+                        </section>
+
+                        <section class="modal-section">
+                            <h3>Future Improvements</h3>
+                            <p>Converting the Python visualization backend into a full web-compatible system using modern visualization frameworks (like Chart.js or D3.js) for interactive browser-based zoom and tooltips.</p>
+                        </section>
+                    </div>
+                    
+                    <aside class="modal-sidebar">
+                        <div class="sidebar-block">
+                            <h4>Technologies Used</h4>
+                            <div class="modal-tags">
+                                <span class="p-tag">Python</span>
+                                <span class="p-tag">NumPy</span>
+                                <span class="p-tag">Matplotlib</span>
+                                <span class="p-tag">Data Visualization</span>
+                            </div>
+                        </div>
+                        <div class="sidebar-block">
+                            <h4>Results & Recognition</h4>
+                            <p class="sidebar-award">📈 Highlighted Analytics Project</p>
+                            <p>Featured in AI Consortium '26 for structural data plotting.</p>
+                        </div>
+                        <div class="sidebar-block">
+                            <h4>Links</h4>
+                            <a href="https://github.com/gokulnath-cmsce/healthcare-monitoring-dashboard" class="btn-primary w-full text-center" target="_blank" rel="noopener noreferrer">View GitHub Repository</a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4: VR Learning Platform -->
+    <div id="modal-vr-learning" class="modal" role="dialog" aria-modal="true" aria-labelledby="m4-title">
+        <div class="modal-backdrop"></div>
+        <div class="modal-wrapper">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-body">
+                <div class="modal-hero p4-gradient">
+                    <span class="modal-badge">Immersive Tech</span>
+                    <h2 id="m4-title" class="modal-title">VR Learning Platform</h2>
+                    <span class="modal-subtitle">Symposium Technical Paper & Platform Design</span>
+                </div>
+                <!-- Interactive High-Fidelity UI Graphic -->
+                <div class="modal-visual-preview">
+                    <svg class="preview-svg" viewBox="0 0 800 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="800" height="300" rx="16" fill="#0f172a" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+                        <!-- Split Screen lines for Stereoscopic VR Cardboard -->
+                        <line x1="400" y1="0" x2="400" y2="300" stroke="rgba(255,255,255,0.15)" stroke-width="2" stroke-dasharray="8 8"/>
+                        
+                        <!-- Left Eye Viewport -->
+                        <text x="30" y="40" fill="#94a3b8" font-family="Outfit" font-size="12" font-weight="600" letter-spacing="1">LEFT EYE SCREEN</text>
+                        <!-- Grid pattern in perspective -->
+                        <line x1="50" y1="220" x2="180" y2="130" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+                        <line x1="350" y1="220" x2="220" y2="130" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+                        <circle cx="200" cy="130" r="30" stroke="#00f2fe" stroke-width="2" fill="none"/>
+                        <polygon points="200,105 210,120 190,120" fill="#00f2fe"/>
+                        <line x1="200" y1="130" x2="200" y2="160" stroke="#00f2fe" stroke-width="2"/>
+                        
+                        <!-- Right Eye Viewport -->
+                        <text x="430" y="40" fill="#94a3b8" font-family="Outfit" font-size="12" font-weight="600" letter-spacing="1">RIGHT EYE SCREEN</text>
+                        <line x1="450" y1="220" x2="580" y2="130" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+                        <line x1="750" y1="220" x2="620" y2="130" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+                        <circle cx="600" cy="130" r="30" stroke="#00f2fe" stroke-width="2" fill="none"/>
+                        <!-- Offset slightly to represent stereoscopic parallax -->
+                        <polygon points="602,105 612,120 592,120" fill="#00f2fe"/>
+                        <line x1="602" y1="130" x2="602" y2="160" stroke="#00f2fe" stroke-width="2"/>
+
+                        <!-- Center Focus Indicator -->
+                        <circle cx="200" cy="130" r="2" fill="#ff007f"/>
+                        <circle cx="600" cy="130" r="2" fill="#ff007f"/>
+                        
+                        <!-- Label Overlay -->
+                        <rect x="290" y="240" width="220" height="40" rx="8" fill="#1e293b" stroke="rgba(255,255,255,0.1)"/>
+                        <text x="310" y="264" fill="#f8fafc" font-family="Outfit" font-size="13" font-weight="600">3D Vector Calibration: OK</text>
+                    </svg>
+                </div>
+                <div class="modal-content-grid">
+                    <div class="modal-main">
+                        <section class="modal-section">
+                            <h3>Overview</h3>
+                            <p>Presented at the 13th National Level Technical Symposium (TEKCLUSTER'25), this research and project concept designs an educational platform based on 3D VR Glasses to increase student interactivity and build practical confidence.</p>
+                        </section>
+                        
+                        <div class="modal-section-split">
+                            <div class="modal-sub-section">
+                                <h3>The Problem</h3>
+                                <p>Standard text-based schooling often lacks practical visualization, particularly in fields like molecular chemistry, spatial engineering, and anatomy. Students struggle to build intuition, leading to rote memorization.</p>
+                            </div>
+                            <div class="modal-sub-section">
+                                <h3>The Solution</h3>
+                                <p>A concept layout and technical roadmap for interactive VR-based modules. The system leverages VR cardboard settings to project 3D assets that students can interact with, enhancing spatial comprehension through active practice.</p>
+                            </div>
+                        </div>
+
+                        <section class="modal-section">
+                            <h3>Key Features</h3>
+                            <ul>
+                                <li>Structural design for interactive 3D laboratory rooms.</li>
+                                <li>Active-participation scenarios focused on engineering and science models.</li>
+                                <li>Technical paper and research validation presented to regional panels.</li>
+                            </ul>
+                        </section>
+
+                        <section class="modal-section">
+                            <h3>Challenges & Learnings</h3>
+                            <p>Understanding UX requirements for Virtual Reality was critical. The design had to strictly minimize simulator sickness by proposing specific camera movements and frame-rate baselines, teaching me the value of user-centric hardware/software guidelines.</p>
+                        </section>
+
+                        <section class="modal-section">
+                            <h3>Future Improvements</h3>
+                            <p>Developing WebXR-based prototypes that run directly inside mobile web browsers, allowing immediate VR cardboard testing without downloading external native files.</p>
+                        </section>
+                    </div>
+                    
+                    <aside class="modal-sidebar">
+                        <div class="sidebar-block">
+                            <h4>Technologies Used</h4>
+                            <div class="modal-tags">
+                                <span class="p-tag">3D VR Glasses</span>
+                                <span class="p-tag">Figma Prototyping</span>
+                                <span class="p-tag">Technical Research</span>
+                                <span class="p-tag">UX Design</span>
+                            </div>
+                        </div>
+                        <div class="sidebar-block">
+                            <h4>Results & Recognition</h4>
+                            <p class="sidebar-award">🏆 Presented at TEKCLUSTER’25</p>
+                            <p>Honored technical paper placement at the 13th National Level Symposium.</p>
+                        </div>
+                        <div class="sidebar-block">
+                            <h4>Links</h4>
+                            <a href="https://github.com/gokulnath-cmsce/vr-learning-design" class="btn-primary w-full text-center" target="_blank" rel="noopener noreferrer">View Design Documents</a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRINT-ONLY DETAILED RESUME (Hidden on screen, optimized for single-page PDF generation via window.print()) -->
+    <div class="print-resume-page" id="print-resume-area">
+        <div class="print-header">
+            <h1 class="print-name">GOKULNATH RAJA</h1>
+            <div class="print-contact-info">
+                <span>📞 +91 81483 59508</span> | 
+                <span>📧 gokulnathaidscmsce@gmail.com</span> | 
+                <span>🔗 linkedin.com/in/gokulnath-cmsce</span> | 
+                <span> Namakkal, TN, India</span>
+            </div>
+        </div>
+
+        <div class="print-section">
+            <h2 class="print-section-title">PROFESSIONAL SUMMARY</h2>
+            <div class="print-section-divider"></div>
+            <p>Motivated and detail-oriented Artificial Intelligence and Data Science B.Tech student with a strong foundation in Python programming, machine learning, and natural language processing. Certified in UI/UX design (Figma), with proven capability in designing and implementing dashboard systems, bilingual NLP bots, and predictive analytics tools to solve real-world problems.</p>
+        </div>
+
+        <div class="print-section">
+            <h2 class="print-section-title">EDUCATION</h2>
+            <div class="print-section-divider"></div>
+            <div class="print-item">
+                <div class="print-item-header">
+                    <strong>CMS College of Engineering, Namakkal</strong>
+                    <span class="print-date">2024 - 2028</span>
+                </div>
+                <div class="print-item-sub">Bachelor of Technology (B.Tech) in Artificial Intelligence and Data Science</div>
+            </div>
+        </div>
+
+        <div class="print-section">
+            <h2 class="print-section-title">CERTIFICATION COURSES</h2>
+            <div class="print-section-divider"></div>
+            <div class="print-item">
+                <div class="print-item-header">
+                    <strong>Python for Data Science</strong>
+                    <span class="print-date">Ongoing / 2026</span>
+                </div>
+                <div class="print-item-sub">IIT Madras (NPTEL via Masai School)</div>
+                <ul class="print-bullets">
+                    <li>Developed hands-on experience in Python programming for structural data analysis and data manipulation.</li>
+                    <li>Gained foundational knowledge in data science concepts, data preprocessing, and exploratory data analysis.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="print-section">
+            <h2 class="print-section-title">TECHNICAL SKILLS</h2>
+            <div class="print-section-divider"></div>
+            <div class="print-skills-grid">
+                <div><strong>Languages:</strong> Python, HTML/CSS, UI/UX (Design Principles), C++</div>
+                <div><strong>Developer Tools:</strong> Git, GitHub, Visual Studio Code, Eclipse, Figma</div>
+                <div><strong>Data Libraries:</strong> Pandas, NumPy, Matplotlib, Scikit-Learn</div>
+            </div>
+        </div>
+
+        <div class="print-section">
+            <h2 class="print-section-title">WORKSHOPS & WEBINARS</h2>
+            <div class="print-section-divider"></div>
+            <div class="print-item">
+                <div class="print-item-header">
+                    <strong>UI/UX Design in Figma</strong> — <em>Image Creative Education</em>
+                    <span class="print-date">Jun 2026</span>
+                </div>
+            </div>
+            <div class="print-item">
+                <div class="print-item-header">
+                    <strong>C Programming bootcamp</strong> — <em>Pro Aggressive Techie</em>
+                    <span class="print-date">Nov 2025</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="print-section">
+            <h2 class="print-section-title">PROJECTS</h2>
+            <div class="print-section-divider"></div>
+            
+            <div class="print-item">
+                <div class="print-item-header">
+                    <strong>AQUASAFE AI | Waterborne Disease Prediction Dashboard</strong>
+                    <span class="print-date">Bugslayer’26</span>
+                </div>
+                <ul class="print-bullets">
+                    <li>Analyzed water quality parameters such as pH, turbidity, and temperature.</li>
+                    <li>Predicted health risks using supervised machine learning classification models.</li>
+                </ul>
+            </div>
+
+            <div class="print-item">
+                <div class="print-item-header">
+                    <strong>HEALTHCARE AI CHATBOT | Bilingual Health Assistant</strong>
+                    <span class="print-date">AI Consortium '26</span>
+                </div>
+                <ul class="print-bullets">
+                    <li>Developed a bilingual (English and Tamil) conversational chatbot for initial symptom analysis.</li>
+                    <li>Provided AI-assisted healthcare suggestions and emergency warnings using key NLP tokenization.</li>
+                </ul>
+            </div>
+
+            <div class="print-item">
+                <div class="print-item-header">
+                    <strong>HEALTHCARE MONITORING DASHBOARD | Vital Signs Hub</strong>
+                    <span class="print-date">AI Consortium '26</span>
+                </div>
+                <ul class="print-bullets">
+                    <li>Monitored patient vitals including SpO2 level, body temperature, and heart rate.</li>
+                    <li>Generated graphical representation of patient analytics using Matplotlib visualizations.</li>
+                </ul>
+            </div>
+
+            <div class="print-item">
+                <div class="print-item-header">
+                    <strong>VIRTUAL REALITY | Immersive Educational Platform</strong>
+                    <span class="print-date">TEKCLUSTER’25</span>
+                </div>
+                <ul class="print-bullets">
+                    <li>Presented a technical paper at the 13th National Level Technical Symposium on VR cardboard training.</li>
+                    <li>Designed platform layout mockups demonstrating 3D VR glasses for interactive educational labs.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
