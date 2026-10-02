@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/gokulnath-portfolio-main/index.html"
+    },
+    {
+      "source": "/:path*",
+      "destination": "/gokulnath-portfolio-main/:path*"
+    }
+  ]
+}
